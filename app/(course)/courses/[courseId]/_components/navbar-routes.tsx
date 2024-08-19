@@ -1,5 +1,3 @@
-"use client"
-
 import { SignInDialog } from "@/components/sign-in-dialog"
 import UserDropdown from "@/components/user-dropdown"
 import { cn } from "@/lib/utils"
@@ -11,7 +9,6 @@ import { Chapter, Course, UserProgress } from "@prisma/client"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { CourseSidebar } from "./course-sidebar"
-import { redirect } from "next/navigation"
 import { buttonVariants } from "@/components/ui/button"
 
 interface CourseNavbarProps {

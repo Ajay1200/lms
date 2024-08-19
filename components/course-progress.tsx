@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react"
 import { Progress } from "./ui/progress"
 import { cn } from "@/lib/utils"
@@ -21,7 +23,11 @@ export const CourseProgress = ({ value, size, variant }: CourseProgressProps) =>
 
   return (
     <div>
-      <Progress className="h-4" value={value} variant={"success"} />
+      <Progress
+        className="h-4"
+        value={value}
+        variant={"success"}
+      />
       <p
         className={cn(
           "text-slate-500 font-medium mt-2",
